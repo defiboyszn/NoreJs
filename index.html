@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="raid.png" type="image/x-icon" />
+  <link rel="stylesheet" href="font.css" type="text/css" media="all" />
+  <title>NoreJS</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h3 class="h3logo"><b class="logo">N</b>NoreJS</h3>
+    <button class="menu" onclick="opennav()"><b class="bars">&#9776;</b>&nbsp;&nbsp;<b class="mem">Menu</b></button>
+  </header>
+    <div class="nav" id="nav">
+      <ul>
+        <button class="back" onclick="closenav()">&times;</button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Examples</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Documentation</a></li>
+      </ul>
+    </div>
+  <br />
+  <div class="ui">
+   <!-- <img class="raid" src="raid.png" alt="" /><br />-->
+   <h1 class="nore" style="text-align: center;">NoreJS</h1>
+    <p class="ui-text">NoreJS is a fast and feature-rich JavaScript library.<br /> It makes things like HTML document traversal and <br /> manipulation, event handling ease to use.<br /><br /><br />
+        <cite>Use the Library by copying this link </cite><br />
+    <input type="text" name="" id="Link" value="https://tobithedev.github.io/NoreJs/nore.js" readonly/>
+    </p>
+  </div><br />
+  <div class="uis">
+    <b>License</b>
+    <p>NoreJS is Licensed By MIT.</p>
+  </div>
+  <h3 class="exa">Examples</h3>
+  <div class="example-ui">
+    <div class="example1">
+      <num>1.Popup Box with Nore-js</num><br /><br />
+      <textarea id="popup" readonly>
+<!DOCTYPE html>        
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popup Box With NoreJS</title>
+</head>
+<body>
+  
+</body>
+  <script src="nore.js"></script>
+  <script>
+    //The $('body') calls out the HTML Body.
+    //The popup is an alert box
+    $('body').popup('Hello NoreJS');
+  </script>
+</html>
+      </textarea>
+    <button class="try uig"><a href="popup.html">Try it Yourself</a></button>
+    </div>
+  </div><br />
+  <div class="example-ui">
+    <div class="example1">
+      <num>2.HTML text with Nore-js</num><br /><br />
+      <textarea id="popup" readonly>
+<!DOCTYPE html>        
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popup Box With Nore-js</title>
+</head>
+<body>
+  
+</body>
+  <script src="nore.js"></script>
+  <script>
+    //The $('body') calls out the HTML Body.
+    //The text is what writes the text into HTML Dom
+    $('body').text('Hello NoreJS');
+  </script>
+</html>
+      </textarea>
+    <button class="try uig"><a href="innerHTML.html">Try it Yourself</a></button>
+    </div>
+  </div><br />
+    <div class="example-ui">
+    <div class="example1">
+      <num>3.FadeOut with NoreJS</num><br /><br />
+      <textarea id="popup" readonly>
+<!DOCTYPE html>        
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FadeOut With NoreJS</title>
+</head>
+<body>
+  
+</body>
+  <script src="nore.js"></script>
+  <script>
+    $('body').text('Hello NoreJS');
+    $('body').on('click',function(){
+      $('body').fadeOut(1000,'1s')
+    });
+  </script>
+</html>
+      </textarea>
+    <button class="try uig"><a href="fadeOut.html">Try it Yourself</a></button>
+    </div>
+  </div><br />
+   <b>Why NoreJS?</b>
+  <div class="reason">
+      <svg class="check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg>
+      <p>NoreJS is an open source Library and Is Easy to Learn.Its Used to Build Website</p>
+  </div>
+   <div class="reason">
+     <svg class="block" style="fill: black;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z"/></svg>
+     <p class="avv">Its Compatible with all Code Editor</p>
+   </div>
+   <a href="texteditor.html" id="playd"><p style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></p></a><br /><br />
+   <!--Footer-->
+   <footer class="footer">
+      <h3 class="company">Connect with Us</h3>
+    <p class="contact">Contact us</p><br />
+   <a href="https://www.facebook.com/NoreJs">  <svg class="icon" style="fill: blue; position: absolute; left: 3px; width: 30px;bottom: 13px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://wwww.instagram.com/norejs"><svg class="icon" style="fill: red; position: absolute; left: 45px; width: 30px;bottom: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>&nbsp;&nbsp;&nbsp;
+     <!--<a href="https://wa.me/qr/MAYRXNPRP7WOM1"> <svg class="icon" style="fill: limegreen; position: absolute; left: 85px; width: 30px;bottom: 42px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>-->
+     <br />
+     <b class="abt">&copy;<script>
+       var year = new Date().getFullYear();
+       document.write(year);
+     </script> Made by NoreJS.All Rights Reserved</b>
+   </footer>
+  <script src="nore.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

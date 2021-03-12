@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Fadeout with NoreJS</title>
+</head>
+
+<body>
+    <div id="texteditor">
+    <button class="run" onclick="live()"><svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/></svg></button>
+  <textarea id="editor">
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Fadeout with NoreJS</title>
+</head>
+<body>
+  
+</body>
+  <script src="nore.js"></script>
+  <script>
+    $('body').text('Hello NoreJS');
+    $('body').on('click',function(){
+      $('body').fadeOut(1000,'1s')
+    });
+  </script>
+</html>
+    </textarea>
+    <b>Output</b>
+    <iframe frameborder="0"></iframe>
+  </div>
+</body>
+ <script src="main.js"></script>
+</html>

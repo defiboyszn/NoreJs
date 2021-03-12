@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Alpha';
+	src: url('Snufkin.otf');
+}
+@font-face {
+  font-family: 'Beta';
+  src: url('Lemon.ttf');
+}
+.ui-text,#Link{
+	font-family: 'Alpha' !important;
+}
+.h3logo{
+  font-family: 'Beta' !important;
+}
