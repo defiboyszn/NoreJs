@@ -3,7 +3,13 @@ function $(selector)
   const self =
   {
     element: document.querySelector(selector),
-    html: ()=> self.element,
+    html: (value)=> {
+      if(value == null){
+      self.element
+      }else{
+        self.element.innerHTML = (value)
+      }
+    },
     on:(event, callback)=>{
       self.element.addEventListener(event,callback)
     },
@@ -19,14 +25,11 @@ function $(selector)
       else
       self.element.setAttribute(name,value)
     },
-    text: (value)=>{
-      self.element.innerHTML = (value)
-    },
-    intext: (value)=>{
+    text: (value) => {
       self.element.innerText = (value)
     },
-   val: () => {
-     self.element.value
+    val: () => {
+     self.element.innerHTML
    },
     linkto: (event,name,href,value)=>{
       self.element.innerHTML = "<a" +" href='" + (href) + "'" +(event) +"='"+(name) + "'>" + (value) + "</a>"
@@ -43,45 +46,33 @@ function $(selector)
     button: (click,event,type,value)=>{
       self.element.innerHTML = "<button type='"+(type) +"'"+(click)+"='"+ (event) + "'>" + (value) + "</button>"
     },
-    popup: (value)=>{
-      self.element = alert((value))
-    },
     style: (styles)=>{
       for(let key in styles){
         self.element.style[key] = styles[key]
       }
       return self
     },
-    Log: (value)=>{
-      self.element = console.log((value))
-    },
-    error: (value)=>{
-      self.element = console.error((value))
-    },
-    popMessage: (value)=>{
-      self.element = prompt((value))
-    },
-    question: (value)=>{
-      self.element = confirm((value))
-    },
-    image: (type,name,src,alt)=>{
-      self.element.innerHTML = "<img src='"+(src) +"'"+(type)+"='"+ (name) + "' alt='"+ (alt) +"'>"
-    },
     //Animation
     fadeOut: (time,speed) => {
       self.element.style.opacity = 0;
-      self.element.style.transition = (speed) + "s";
+      self.element.style.transition = (speed)+ "s";
       setTimeout(function() {
         self.element.style.display = "none";
       },(time));
     },
     fadeIn: (time,speed) => {
       self.element.style.display = "block";
-      self.element.style.transition = (speed) + "s";
+      self.element.style.transition = "all" + "" + (speed)+ "s";
       setTimeout(function() {
         self.element.style.opacity = 1;
       },(time));
     },
+    height: (value)=>{
+      self.element.style.height = (value)
+    },  
+    width: (value) => {
+      self.element.style.width = (value)
+    }
   }
   return self
 }

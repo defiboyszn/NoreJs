@@ -1,0 +1,276 @@
+body {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+    position: static;
+}
+header{
+  background: linear-gradient(to left,#FF4,#A55);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+.ui{
+  margin: 5px;
+  box-shadow: 0 0 5px 0 #000;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 70px;
+  background: #ECECEC;
+}
+.reason{
+  margin: 5px;
+  box-shadow: 0 0 5px 0 #000;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+  background: #ECECEC;
+}
+.uis{
+  margin: 5px;
+  box-shadow: 0 0 5px 0 #000;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 60px;
+  background: #ECECEC;
+}
+.exa{
+  position: relative;
+  top: 40px;
+}
+.example-ui{
+  margin: 5px;
+  box-shadow: 0 0 5px 0 #000;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+  background: #ECECEC;
+}
+.h3logo{
+  position: relative;
+  bottom: 10px;
+  /*background: #5463FF;*/
+  color: #ffffff;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 30px;
+  text-indent: 5px;
+}
+.logo{
+  background: linear-gradient(85deg,#111,#FF4);
+  color: #FFFFFF;
+  border-radius: 5px;
+  border-bottom-left-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+  font-family: cursive;
+  width: 50px;
+  position: relative;
+  padding-left: 10px;
+  box-shadow: 2px 0 5px #111;
+  padding-right: 10px;
+}
+.raid{
+  position: relative;
+  left: 60px;
+}
+#Link{
+  width: 280px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #3D3D3D;
+}
+.menu{
+  position: relative;
+  left: 70%;
+  bottom: 75px;
+  background: none;
+  border: 1px solid #111;
+  color: #111;
+  padding: 2px;
+  border-radius: 5px;
+  outline: none;
+}
+.bars{
+  font-size: 25px;
+}
+.mem{
+  font-size: 25px;
+}
+.nav{
+  background: #1D1D1D;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  height: 0px;
+  transition: 2s;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: -1;
+}
+.nav ul li{
+  list-style: none;
+}
+.nav a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.back{
+  position: relative;
+  left: 85%;
+  top: 40px;
+  font-size: 40px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+#popup{
+  position: relative;
+  left: 10px;
+  margin: 0;
+  width: 305px;
+  height: 200px;
+  border: 1px solid #000;
+  outline: none;
+  background: #171717;
+  color: #fff;
+}
+.tbtn{
+  background: #282928;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  position: relative;
+  left: 50px;
+  top: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.tbtn:active{
+  background: #171717;
+}
+.try{
+  background: #282928;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  position: relative;
+  left: 180px;
+  bottom: 23px;
+  border-radius: 5px;
+  outline: none;
+}
+.try a{
+  text-decoration: none;
+  color: #fff;
+}
+#editor{
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  height: 320px;
+  outline: none;
+  background: #171717;
+  color: #fff;
+  border: none;
+}
+iframe{
+  width: 94%;
+  height: 320px;
+  border: none;
+  padding: 10px;
+}
+.run{
+  position: fixed;
+  left: 270px;
+  bottom: 80px;
+  padding: 20px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.uig{
+  position: relative;
+  top: 5px;
+  left: 120px;
+}
+.play{
+  position: absolute;
+  bottom: 10px;
+  right: -20px;
+  font-size: 40px;
+  fill: #8DB201
+}
+.play:active{
+  fill: #FF8606;
+}
+.check{
+  height: 50px;
+  fill: #000;
+  position: relative;
+  left: 140px;
+}
+.block{
+  height: 90px;
+  position: relative;
+  left: 120px;
+}
+.avv{
+  color: black;
+  text-indent: 40px;
+}
+#playd{
+  text-align: right;
+  position: fixed;
+  padding: 10px;
+  height: 40px;
+  border-radius: 50px;
+  top: 500px;
+  right: 20px;
+  z-index: 1;
+  background: linear-gradient(85deg,#FF4,#A55);
+  width: 40px;
+  box-shadow: 0px 0px 5px 0px #000;  
+  text-decoration: none;
+}
+#playd p{
+  color: #fff;
+  font-size: 25px;
+  position: relative;
+  right: 3px;
+  bottom: 30px;
+}
+#playd p, svg{
+  width: 50px;
+  position: relative;
+  top: -13px;
+  fill: #fff;
+}
+.footer{
+  background: goldenrod;
+  position: relative;
+  width: 100%;
+  /*top: 900px;*/
+  color: white;
+} 
+.icon{
+  position: relative;
+  top: 80px;
+}
+.gg{
+  top: 40px;
+}
