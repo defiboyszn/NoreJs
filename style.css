@@ -2,11 +2,10 @@ body {
     font-size: 15pt;
     margin: 0;
     padding: 0;
-    background: #F5F5F5;
-    position: static;
+    background: whitesmoke;
 }
 header{
-  background: linear-gradient(to left,#FF4,#A55);
+  background: #414141;
   padding-top: 5px;
   padding-bottom: 5px;
   height: 60px;
@@ -16,13 +15,10 @@ header{
   z-index: 5;
 }
 .ui{
-  margin: 5px;
-  box-shadow: 0 0 5px 0 #000;
-  padding: 10px;
-  border-radius: 5px;
   position: relative;
-  top: 70px;
+  top: 27px;
   background: #ECECEC;
+  padding: 10px;
 }
 .reason{
   margin: 5px;
@@ -66,7 +62,7 @@ header{
   text-indent: 5px;
 }
 .logo{
-  background: linear-gradient(85deg,#111,#FF4);
+  /*background: linear-gradient(85deg,#111,#FF4);*/
   color: #FFFFFF;
   border-radius: 5px;
   border-bottom-left-radius: 25px;
@@ -78,16 +74,17 @@ header{
   padding-left: 10px;
   box-shadow: 2px 0 5px #111;
   padding-right: 10px;
+  right: 10px;
 }
-.raid{
+/*.raid{
   position: relative;
   left: 60px;
-}
+}*/
 #Link{
-  width: 280px;
-  padding: 10px;
+  width: 350px;
   outline: none;
   border: 1px solid #3D3D3D;
+  position: relative;
 }
 .menu{
   position: relative;
@@ -107,34 +104,20 @@ header{
   font-size: 25px;
 }
 .nav{
-  background: #1D1D1D;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  overflow: hidden;
-  height: 0px;
-  transition: 2s;
   width: 100%;
-  position: sticky;
-  top: 0px;
-  z-index: -1;
+  position: relative;
+  bottom: 60px;
+  left: 91px;
 }
 .nav ul li{
   list-style: none;
+  display: inline-block;
 }
 .nav a{
+  position: relative;
   text-decoration: none;
   color: #fff;
-  font-size: 25px;
-}
-.back{
-  position: relative;
-  left: 85%;
-  top: 40px;
-  font-size: 40px;
-  background: none;
-  outline: none;
-  border: none;
-  color: #fff;
+  font-size: 15px;
 }
 #popup{
   position: relative;
@@ -176,7 +159,7 @@ header{
   text-decoration: none;
   color: #fff;
 }
-#editor{
+#editor,code{
   margin: 0;
   padding: 0;
   width: 360px;
@@ -231,7 +214,7 @@ iframe{
 }
 .avv{
   color: black;
-  text-indent: 40px;
+  text-indent: 20px;
 }
 #playd{
   text-align: right;
@@ -242,13 +225,13 @@ iframe{
   top: 500px;
   right: 20px;
   z-index: 1;
-  background: linear-gradient(85deg,#FF4,#A55);
+  background: whitesmoke;
   width: 40px;
-  box-shadow: 0px 0px 5px 0px #000;  
+  box-shadow: 0px 0px 5px 0px #333;  
   text-decoration: none;
 }
 #playd p{
-  color: #fff;
+  color: #000;
   font-size: 25px;
   position: relative;
   right: 3px;
@@ -258,10 +241,10 @@ iframe{
   width: 50px;
   position: relative;
   top: -13px;
-  fill: #fff;
+  fill: #000;
 }
 .footer{
-  background: goldenrod;
+  background: #414141;
   position: relative;
   width: 100%;
   /*top: 900px;*/
@@ -273,4 +256,30 @@ iframe{
 }
 .gg{
   top: 40px;
+}
+nore{
+  font-size: 20px;
+  position: relative;
+  right: 20px;
+}
+.cl{
+  background: #9F9F9F;
+  color: #fff;
+}
+.stt{
+  background: orange;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  left: 120px;
+  outline: none;
+  bottom: 20px;
+}
+.stt:active{
+  background: goldenrod;
+}
+.ui-text{
+  position: relative;
+  top: 10px;
 }

@@ -1,4 +1,4 @@
-function opennav(){
+/*function opennav(){
   $('#nav').height("210px");
   $('#nav').style({
     zIndex: "6",
@@ -11,8 +11,9 @@ function closenav(){
        zIndex: "-10",
        top: "0px"
      });
-}
+}*/
 function live(){
   var editor = document.querySelector('#editor').value;
   document.querySelector('iframe').srcdoc = editor;
   }
+log('hi');

@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="raid.png" type="image/x-icon" />
-  <link rel="stylesheet" href="font.css" type="text/css" media="all" />
+  <link rel="shortcut icon" href="norejs.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="norejs.png" />
+  <link rel="stylesheet" href="prime.css" type="text/css" media="all" />
   <title>NoreJS</title>
   
   <link rel="stylesheet" href="style.css">
@@ -13,108 +14,81 @@
 
 <body>
   <header>
-    <h3 class="h3logo"><b class="logo">N</b>NoreJS</h3>
-    <button class="menu" onclick="opennav()"><b class="bars">&#9776;</b>&nbsp;&nbsp;<b class="mem">Menu</b></button>
-  </header>
-    <div class="nav" id="nav">
+    <h3 class="h3logo"><b class="logo">N</b><nore>NoreJS</nore></h3>
+    <div class="nav">
       <ul>
-        <button class="back" onclick="closenav()">&times;</button>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Examples</a></li>
+        <li><a href="example.html">Examples</a></li>
         <li><a href="#">Learn</a></li>
         <li><a href="#">Documentation</a></li>
       </ul>
     </div>
+</header>  
   <br />
-  <div class="ui">
-   <!-- <img class="raid" src="raid.png" alt="" /><br />-->
+  <div class="ui cl">
    <h1 class="nore" style="text-align: center;">NoreJS</h1>
-    <p class="ui-text">NoreJS is a fast and feature-rich JavaScript library.<br /> It makes things like HTML document traversal and <br /> manipulation, event handling ease to use.<br /><br /><br />
-        <cite>Use the Library by copying this link </cite><br />
-    <input type="text" name="" id="Link" value="https://tobithedev.github.io/NoreJs/nore.js" readonly/>
+    <p class="ui-text">NoreJS is a lightweight JavaScript library.<br /> It makes things like HTML Dom <br /> event handling ease to use.<br /><br /><br />
     </p>
+    <button class="stt">Get Started</button>
   </div><br />
+  <div>
+  <pre class="language-html" id="Link"><code>
+&lt;script src="https://tobithedev.github.io/NoreJs/nore.js"&gt;&lt;/script&gt;
+  </code></pre>
+  </div>
   <div class="uis">
     <b>License</b>
-    <p>NoreJS is Licensed By MIT.</p>
+    <p>NoreJS is Licensed By <a style="text-decoration:none;" href="License.txt">MIT.</a></p>
   </div>
   <h3 class="exa">Examples</h3>
   <div class="example-ui">
     <div class="example1">
-      <num>1.Popup Box with Nore-js</num><br /><br />
-      <textarea id="popup" readonly>
-<!DOCTYPE html>        
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Popup Box With NoreJS</title>
-</head>
-<body>
+      <num>1.HTML text with Nore-js</num><br /><br />
+     <pre class="language-html" >
+    <code class="language-html">  
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Write with NoreJS&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
   
-</body>
-  <script src="nore.js"></script>
-  <script>
-    //The $('body') calls out the HTML Body.
-    //The popup is an alert box
-    $('body').popup('Hello NoreJS');
-  </script>
-</html>
-      </textarea>
-    <button class="try uig"><a href="popup.html">Try it Yourself</a></button>
-    </div>
-  </div><br />
-  <div class="example-ui">
-    <div class="example1">
-      <num>2.HTML text with Nore-js</num><br /><br />
-      <textarea id="popup" readonly>
-<!DOCTYPE html>        
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Popup Box With Nore-js</title>
-</head>
-<body>
-  
-</body>
-  <script src="nore.js"></script>
-  <script>
-    //The $('body') calls out the HTML Body.
-    //The text is what writes the text into HTML Dom
-    $('body').text('Hello NoreJS');
-  </script>
-</html>
-      </textarea>
+&lt;/body&gt;
+  &lt;script src="nore.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+     //The $('body') calls out the HTML Body.
+    //The html is what writes the text into HTML Dom
+    $('body').html('Hello NoreJS');
+  &lt;/script&gt;
+&lt;/html&gt;
+  </code>
+  </pre>
     <button class="try uig"><a href="innerHTML.html">Try it Yourself</a></button>
     </div>
   </div><br />
     <div class="example-ui">
     <div class="example1">
-      <num>3.FadeOut with NoreJS</num><br /><br />
-      <textarea id="popup" readonly>
-<!DOCTYPE html>        
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FadeOut With NoreJS</title>
-</head>
-<body>
+      <num>2.FadeOut with NoreJS</num><br /><br />
+<pre class="language-html">
+      <code class="language-html language-javascript">  
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+   &lt;head&gt;
+  &lt;title&gt;FadeOut With NoreJS&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
   
-</body>
-  <script src="nore.js"></script>
-  <script>
+&lt;/body&gt;
+  &lt;script src="nore.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
     $('body').text('Hello NoreJS');
     $('body').on('click',function(){
       $('body').fadeOut(1000,'1s')
     });
-  </script>
-</html>
-      </textarea>
+  &lt;/script&gt;
+&lt;/html&gt;
+  </code>
+  </pre>
     <button class="try uig"><a href="fadeOut.html">Try it Yourself</a></button>
     </div>
   </div><br />
@@ -144,4 +118,5 @@
   <script src="nore.js"></script>
   <script src="main.js"></script>
 </body>
+<script src="prime.js"></script>
 </html>

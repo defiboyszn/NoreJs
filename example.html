@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="norejs.png" type="image/x-icon" />
   <link rel="stylesheet" href="font.css" type="text/css" media="all" />
-  <title>NoreJS</title>
+  <link rel="stylesheet" href="prime.css" type="text/css" media="all" />
+  <title>Examples in NoreJS</title>
   
   <link rel="stylesheet" href="style.css">
 </head>
@@ -25,86 +27,89 @@
       </ul>
     </div>
   <br />
-   <div class="example-ui gg">
+  <div class="example-ui gg">
     <div class="example1">
-      <num>1.Popup Box with Nore-js</num><br /><br />
-      <textarea id="popup" readonly>
-<!DOCTYPE html>        
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Popup Box With NoreJS</title>
-</head>
-<body>
+      <num>1.HTML text with Nore-js</num><br /><br />
+<pre class="language-html" >
+    <code class="language-html">  
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Write with NoreJS&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
   
-</body>
-  <script src="nore.js"></script>
-  <script>
-    //The $('body') calls out the HTML Body.
-    //The popup is an alert box
-    $('body').popup('Hello NoreJS');
-  </script>
-</html>
-      </textarea>
-    <button class="try uig"><a href="popup.html">Try it Yourself</a></button>
-    </div>
-  </div><br />
-  <div class="example-ui">
-    <div class="example1">
-      <num>2.HTML text with Nore-js</num><br /><br />
-      <textarea id="popup" readonly>
-<!DOCTYPE html>        
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Popup Box With Nore-js</title>
-</head>
-<body>
-  
-</body>
-  <script src="nore.js"></script>
-  <script>
-    //The $('body') calls out the HTML Body.
-    //The text is what writes the text into HTML Dom
-    $('body').text('Hello NoreJS');
-  </script>
-</html>
-      </textarea>
+&lt;/body&gt;
+  &lt;script src="nore.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+     //The $('body') calls out the HTML Body.
+    //The html is what writes the text into HTML Dom
+    $('body').html('Hello NoreJS');
+  &lt;/script&gt;
+&lt;/html&gt;
+  </code>
+  </pre>
     <button class="try uig"><a href="innerHTML.html">Try it Yourself</a></button>
     </div>
   </div><br />
     <div class="example-ui">
     <div class="example1">
-      <num>3.FadeOut with NoreJS</num><br /><br />
-      <textarea id="popup" readonly>
-<!DOCTYPE html>        
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FadeOut With NoreJS</title>
-</head>
-<body>
+      <num>2.FadeOut with NoreJS</num><br /><br />
+<pre class="language-html">
+      <code class="language-html language-javascript">  
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;FadeOut With NoreJS&lt;/title&gt;
+  &lt;/head&gt;
+&lt;body&gt;
   
-</body>
-  <script src="nore.js"></script>
-  <script>
+&lt;/body&gt;
+  &lt;script src="nore.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
     $('body').text('Hello NoreJS');
     $('body').on('click',function(){
       $('body').fadeOut(1000,'1s')
     });
-  </script>
-</html>
-      </textarea>
+  &lt;/script&gt;
+&lt;/html&gt;
+  </code>
+  </pre>
     <button class="try uig"><a href="fadeOut.html">Try it Yourself</a></button>
+    </div>
+  </div><br />
+    <div class="example-ui">
+    <div class="example1">
+      <num>3.FadeIn with NoreJS</num><br /><br />
+      <pre class="language-html">
+      <code class="language-html language-javascript">  
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+   &lt;head&gt;
+  &lt;title&gt;FadeOut With NoreJS&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div&gt;
+     &lt;p&gt;&lt;/p&gt;
+    &lt;button&gt;Click me&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+  &lt;script src="nore.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+    $('p').text('Hello NoreJS');
+    $('p').hide();
+    $('button').on('click',function(){
+      $('p').fadeIn(1,'12s')
+    });
+  &lt;/script&gt;
+&lt;/html&gt;
+  </code>
+  </pre>
+    <button class="try uig"><a href="fadeIn.html">Try it Yourself</a></button>
     </div>
   </div><br />
 </body>
 <script src="nore.js"></script>
 <script src="main.js"></script>
+<script src="prime.js"></script>
 </html>
