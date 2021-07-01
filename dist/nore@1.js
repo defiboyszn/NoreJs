@@ -277,7 +277,7 @@ $.mount = function(vnode, container) {
       el.textContent = vnode.children
     } else {
       vnode.children.forEach(child => {
-        mount(child, el)
+        $.mount(child, el)
       })
     }
     container.appendChild(el)
