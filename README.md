@@ -18,5 +18,24 @@
 ```
 # Creating Dom Element with Nore V2
 ```js 
+ var App = $.createElement({
+    tag: 'div',
+    props:{ 
+      class: 'red',
+      onclick: 'alert(\'Yooo!\')'
+    },
+    children: [$.createElement({
+      tag: 'h1',
+      props:{
+        style: 'font-size: 30px'
+      },
+      children: 'Hello World'
+    })]
+  });
 
+  $.mount(App,document.body)
 ```
+
+
+ 
+
