@@ -6,6 +6,7 @@
 
 ### https://tobithedev.github.io/NoreJs/nore.js
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9627be6b-c3e3-49db-b1bc-8292ce869c1d/deploy-status)](https://app.netlify.com/sites/norejs/deploys)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/Tobithedev/norejs)
 
 # Usage
 ```html 
