@@ -263,7 +263,7 @@ $.debug = function(on){
 $.alert = function(message){
   alert(message)
 }
-$.CreateElement = function(options) {
+$.createElement = function(options) {
   return {
     tag: options.tag,
     props: options.props,
