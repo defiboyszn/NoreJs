@@ -2,13 +2,13 @@
 
 
  NoreJs is a JavaScript library.
- It's made by Tobi.
+ It  was created by Tobithedev.
  It's Hosted by Github.
  @tobithedev
  https://tobithedev.github.io/NoreJs/nore.js
  version1.0
  
- Thanks to Tobi.
+ Thanks to Tobithedev.
  😊😊
 */
 let debug = false;
