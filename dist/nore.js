@@ -12,19 +12,21 @@
  😊😊
 */
 let debug = false;
-function warn(message,...othermessage){
+function warn(){
   if (debug){
-    console.error('[Nore Warn]: ',message,othermessage)
+    console.error('[Nore Warn]: ', argument[0])
   }
 }
 function $(selector)
 {
   
   function verifyselector(selector){
-    if (selector === 'document') {
+    if (selector === document) {
       return document;
-    } else if (selector === 'window') {
+    } else if (selector === window) {
       return window;
+    } else if(selector === this){
+      return this;
     } else {
       return document.querySelector(selector);
     }
@@ -261,7 +263,7 @@ $.debug = function(on){
 $.alert = function(message){
   alert(message)
 }
-$.component = function(options) {
+$.CreateElement = function(options) {
   return {
     tag: options.tag,
     props: options.props,
